@@ -18,6 +18,73 @@ header{
     border-bottom: 3px solid #69B99D;
     padding-bottom: 10px;
 }
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 40px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  margin-top: -20px;
+}
+
+.content {
+  max-width: 440px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6b7270;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background: #58b895;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 13px 22px;
+  border-radius: 4px;
+}
+
+.media {
+  position: relative;
+  width: 520px;
+  max-width: 100%;
+}
+
+.media::before {
+  content: "";
+  position: absolute;
+  top: -36px;
+  right: -36px;
+  width: 78%;
+  height: 100%;
+  background: #cbf2e3;
+  border-radius: 3px;
+  z-index: 0;
+}
+
+.media img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
 @media(max-width: 500px) {
     .container{
         flex-direction: column;
@@ -31,5 +98,42 @@ header{
     .menu{
         display: block;
     }
-    
+    .hero {
+        flex-direction: column-reverse;
+       padding-top: 80px;
+        gap: 25px;
+        min-height: auto;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+        padding-top: 26px;
+    }
+
+    .photo img {
+        width: 88%;
+        height: 146px;
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 21px;
+        line-height: 29px;
+    }
+
+    .content p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    button {
+        padding: 12px 24px;
+        border: 2px solid #ff00b7;
+    }
 }
