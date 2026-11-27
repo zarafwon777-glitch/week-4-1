@@ -211,6 +211,86 @@ p {
   color: #6b7270;
   margin-bottom: 0;
 }
+.testimonials {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 96px 24px;
+}
+
+.testimonials h2 {
+  max-width: 420px;
+  margin: 0 auto 56px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 70px 44px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
+}
+
+.quote {
+  font-size: 20px;
+  line-height: 1.65;
+  color: #3d4240;
+  margin-bottom: 24px;
+}
+
+.quote-mark {
+  color: #58b895;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 0;
+  vertical-align: -6px;
+  margin-right: 4px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.author span {
+  font-size: 14px;
+  color: #7c8280;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d8dddd;
+}
+
+.dot--active {
+  background: #58b895;
+}
 
 
 
@@ -311,4 +391,27 @@ p {
     gap: 24px;
   }
 }
+
+  .testimonials {
+    padding: 64px 20px;
+  }
+
+  .testimonials h2 {
+    max-width: 100%;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card--desktop-only {
+    display: none;
+  }
+
+  .testimonial-card {
+    padding: 32px 24px;
+  }
 }
